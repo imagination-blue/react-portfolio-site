@@ -1,10 +1,10 @@
-const DEFAULT_MAX_PERCENTAGE = 100;
-const LANGUAGE_COUNT_BASE = 10;
-
 import { requestStates } from '../constants';
 import { useEffect, useReducer } from 'react';
 import axios from 'axios';
 import { skillReducer, initialState, actionTypes } from '../reducers/skillReducer';
+
+const DEFAULT_MAX_PERCENTAGE = 100;
+const LANGUAGE_COUNT_BASE = 10;
 
 export const useSkills = () => {
   const [state, dispatch] = useReducer(skillReducer, initialState);
